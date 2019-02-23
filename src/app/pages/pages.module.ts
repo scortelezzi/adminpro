@@ -8,9 +8,18 @@ import { ProgressComponent } from './progress/progress.component';
 
 //Modulos
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 //Rutas
 import { PAGES_ROUTES } from './pages.routes';
+
+//Temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
+import { ChartsModule } from 'ng2-charts';
+
+
 
 
 @NgModule({
@@ -18,7 +27,9 @@ import { PAGES_ROUTES } from './pages.routes';
         PagesComponent,
         DahsboardComponent,
         Graficas1Component,
-        ProgressComponent
+        ProgressComponent,
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     exports: [
         DahsboardComponent,
@@ -27,7 +38,9 @@ import { PAGES_ROUTES } from './pages.routes';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule,
+        ChartsModule
     ]
 })
 
