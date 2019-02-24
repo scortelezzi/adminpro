@@ -9,6 +9,7 @@ import { ProgressComponent } from './progress/progress.component';
 //Modulos
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 //Rutas
 import { PAGES_ROUTES } from './pages.routes';
@@ -29,7 +30,8 @@ import { ChartsModule } from 'ng2-charts';
         Graficas1Component,
         ProgressComponent,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DahsboardComponent,
